@@ -9,7 +9,7 @@
 // HEALTH AND ARMOR		
 kMarineHealth = 100	kMarineArmor = 30	kMarinePointValue = 5
 kJetpackHealth = 100	kJetpackArmor = 30	kJetpackPointValue = 10
-kExosuitHealth = 100	kExosuitArmor = 280	kExosuitPointValue = 20
+kExosuitHealth = 100	kExosuitArmor = 400	kExosuitPointValue = 20
 
 kGrenadeLauncherPointValue = 2
 kShotgunPointValue = 5
@@ -33,7 +33,7 @@ kBabblerHealth = 10	kBabblerArmor = 0	kBabblerPointValue = 0
 kBabblerEggHealth = 300	kBabblerEggArmor = 0	kBabblerEggPointValue = 0
 		
 kArmorPerUpgradeLevel = 20
-kExosuitArmorPerUpgradeLevel = 45
+kExosuitArmorPerUpgradeLevel = 60
 kArmorHealScalar = 1 // 0.75
 
 kParasitePlayerPointValue = 1

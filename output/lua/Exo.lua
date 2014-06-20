@@ -84,7 +84,7 @@ local kHealthCritical = PrecacheAsset("sound/NS2.fev/marine/heavy/critical")
 local kHealthCriticalTrigger = 0.2
 
 local kWalkMaxSpeed = 3.7
-local kMaxSpeed = 6
+local kMaxSpeed = 3.7
 local kViewOffsetHeight = 2.3
 local kAcceleration = 20
 
