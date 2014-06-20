@@ -869,7 +869,7 @@ function AlienTeam:InitTechTree()
     self.techTree:AddBuyNode(kTechId.BabblerEgg,            kTechId.BioMassOne, kTechId.UpgradeGorge, kTechId.AllAliens)
     self.techTree:AddBuyNode(kTechId.BabblerAbility,        kTechId.BioMassOne, kTechId.UpgradeGorge)
     self.techTree:AddBuyNode(kTechId.BileBomb,              kTechId.BioMassThree, kTechId.UpgradeGorge, kTechId.AllAliens)
-    self.techTree:AddBuyNode(kTechId.Web,                   kTechId.BioMassSeven, kTechId.UpgradeGorge, kTechId.AllAliens) 
+    //self.techTree:AddBuyNode(kTechId.Web,                   kTechId.BioMassSeven, kTechId.UpgradeGorge, kTechId.AllAliens) 
     
     // lerk researches
     self.techTree:AddResearchNode(kTechId.UpgradeLerk,    kTechId.BioMassOne, kTechId.Shift)
@@ -892,6 +892,7 @@ function AlienTeam:InitTechTree()
     self.techTree:AddBuildNode(kTechId.GorgeTunnel)
     self.techTree:AddBuildNode(kTechId.Hydra)
     self.techTree:AddBuildNode(kTechId.Clog)
+    self.techTree:AddBuildNode(kTechId.Web)
 
     self.techTree:SetComplete()
     
