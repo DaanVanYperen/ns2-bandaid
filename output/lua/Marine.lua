@@ -809,13 +809,8 @@ function Marine:GetDeflectMove()
 end    
 
 function Marine:ModifyJumpLandSlowDown(slowdownScalar)
-
-    if self.strafeJumped then
-        slowdownScalar = 0.2 + slowdownScalar
-    end
-    
-    return slowdownScalar
-
+    // make sure we have a decent slowdown effect after landing.
+    return Clamp(0.2 + slowdownScalar,0,1)
 end
 
 local kStrafeJumpForce = 1

@@ -1,5 +1,6 @@
-name        = "bandaid"
+name        = "NS2 bandaid"
 source_dir  = "source/"
 output_dir  = "output/"
-description = [=[]=]
+description = [=[Check back later!]=]
 image       = "preview.jpg"
+publish_id = "104b71bc"
