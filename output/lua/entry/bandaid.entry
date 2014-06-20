@@ -1,0 +1,7 @@
+modEntry = [[
+    Client: lua/bandaid/aid_Client.lua,
+    Server: lua/bandaid/aid_Server.lua,
+    Predict: lua/bandaid/aid_Predict.lua,
+    Shared: lua/bandaid/aid_Shared.lua,
+    Priority: 3
+]]

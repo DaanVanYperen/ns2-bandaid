@@ -1,0 +1,5 @@
+name        = "bandaid"
+source_dir  = "source/"
+output_dir  = "output/"
+description = [=[]=]
+image       = "preview.jpg"
