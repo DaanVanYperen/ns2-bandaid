@@ -18,7 +18,7 @@ kFlamethrowerPointValue = 7
 kMinigunPointValue = 5
 kRailgunPointValue = 5
 		
-kSkulkHealth = 70	kSkulkArmor = 10	kSkulkPointValue = 5    kSkulkHealthPerBioMass = 3
+kSkulkHealth = 60	kSkulkArmor = 10	kSkulkPointValue = 5    kSkulkHealthPerBioMass = 3
 kGorgeHealth = 160	kGorgeArmor = 75	kGorgePointValue = 7    kGorgeHealthPerBioMass = 2
 kLerkHealth = 125	kLerkArmor = 45	    kLerkPointValue = 15    kLerkHealthPerBioMass = 2
 kFadeHealth = 250	kFadeArmor = 80     kFadePointValue = 20    kFadeHealthPerBioMass = 5
