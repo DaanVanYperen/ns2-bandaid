@@ -9,18 +9,23 @@ Lets face it, your server is not filled with competitive players. If you favor h
 
 Overview
 
-* Marines
-  * Chained jumps less effective.
-* Skulks
-  * Take 1 less bullet to kill. (offset jumping)
-* Gorge
-  * Always webs! max 3, no resource cost.
-* Exos
-  * Restored classic ns2 exos:
-     * Health boost, 400 + 60 per armor level.
-     * Speed decrease (lumbering death machine).
-     * Minigun spread and damage increase
-     * Claw damage increase
-]=]
+Marines
+- Chained jumps less effective.
+
+Skulks
+- Take 1 less bullet to kill. (offset jumping)
+
+Gorges
+- Always webs! max 3, no resource cost.
+
+Exos
+- Restored classic ns2 exo traits:
+-- Health boost, 400 + 60 per armor level.
+-- Speed decrease (lumbering death machine).
+-- Minigun spread and damage increase.
+-- Claw damage increase.
+-- No beacon
+
+Sourcecode: https://github.com/DaanVanYperen/ns2-bandaid]=]
 image       = "preview.jpg"
 publish_id = "104b71bc"

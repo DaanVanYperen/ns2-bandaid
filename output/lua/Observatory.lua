@@ -224,7 +224,7 @@ local function TriggerMarineBeaconEffects(self)
 
     for index, player in ipairs(GetEntitiesForTeam("Player", self:GetTeamNumber())) do
     
-        if player:GetIsAlive() and (player:isa("Marine") or player:isa("Exo")) then
+        if player:GetIsAlive() and (player:isa("Marine")) then
             player:TriggerEffects("player_beacon")
         end
     
@@ -296,7 +296,7 @@ local function GetPlayersToBeacon(self, toOrigin)
     for index, player in ipairs(self:GetTeam():GetPlayers()) do
     
         // Don't affect Commanders or Heavies
-        if player:isa("Marine") or player:isa("Exo") then
+        if player:isa("Marine") then
         
             // Don't respawn players that are already nearby.
             if not GetIsPlayerNearby(self, player, toOrigin) then
