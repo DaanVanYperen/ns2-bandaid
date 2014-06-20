@@ -55,7 +55,7 @@ kCelerityAddSpeed = 1.5
 
 kHydrasPerHive = 3
 kClogsPerHive = 10
-kNumWebsPerGorge = 10
+kNumWebsPerGorge = 3
 kCystInfestDuration = 37.5
 
 kSentriesPerBattery = 3

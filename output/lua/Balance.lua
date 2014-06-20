@@ -373,7 +373,7 @@ kBileBombDuration = 5
 // 200 inches in NS1 = 5 meters
 kBileBombSplashRadius = 6
 
-kWebBuildCost = 1
+kWebBuildCost = 0
 kWebbedDuration = 2
 
 kLerkBiteDamage = 60
