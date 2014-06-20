@@ -22,7 +22,7 @@ MedPack.kHealthSound = PrecacheAsset("sound/NS2.fev/marine/common/health")
 
 MedPack.kHealth = 50
 
-local kPickupDelay = 0.53
+local kPickupDelay = 1.03
 
 local networkVars =
 {
