@@ -290,11 +290,11 @@ kFlameDamageStackWeight = 0.5
 kExoDualMinigunModifier = 1
 kExoDualRailgunModifier = 1
 
-kMinigunDamage = 20
+kMinigunDamage = 25
 kMinigunDamageType = kDamageType.Heavy
 kMinigunClipSize = 250
 
-kClawDamage = 30
+kClawDamage = 60
 kClawDamageType = kDamageType.Structural
 
 kRailgunDamage = 30

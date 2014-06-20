@@ -43,7 +43,7 @@ local kShellsAttachPoints = { [ExoWeaponHolder.kSlotNames.Left] = "Exosuit_LElbo
                               [ExoWeaponHolder.kSlotNames.Right] = "Exosuit_RElbow" }
 
 local kMinigunRange = 400
-local kMinigunSpread = Math.Radians(5)
+local kMinigunSpread = Math.Radians(8)
 
 
 local kBulletSize = 0.03
