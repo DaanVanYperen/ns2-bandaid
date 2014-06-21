@@ -15,22 +15,26 @@ Marines
 - Need 1 less smg bullet to kill a skulk early game.
 - Colored tracers indicate weapon tech level.
 
+Exos
+- Restored classic ns2 exo traits:
+-- Health boost (400 + 60 per armor level)
+-- Speed decrease (lumbering death machine).
+-- Minigun spread and damage increased
+-- Claw damage increased
+-- No beacon
+
 Skulks
 - Take 1 less smg bullet to kill.
 - Base move speed increased by 0.8
+- Less precise aim required with bite.
 
 Gorges
-- Always webs! max 3, no resource cost.
 - Hydra attack speed increased by 30%.
 - Hydra improved tracking of fast targets.
+- Always webs! max 3, no resource cost.
 
-Exos
-- Restored classic ns2 exo traits:
--- Health boost, 400 + 60 per armor level.
--- Speed decrease (lumbering death machine).
--- Minigun spread and damage increase.
--- Claw damage increase.
--- No beacon
+Fades
+- Less precise aim required with swipe.
 
 Sourcecode: https://github.com/DaanVanYperen/ns2-bandaid]=]
 image       = "preview.jpg"
