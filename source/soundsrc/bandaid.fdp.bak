@@ -371,7 +371,7 @@
 <notes></notes>
 <entrylistmode>1</entrylistmode>
 <waveform>
-<filename>../../../../../../../projects/mods/bandaidmod/source/soundsrc/rifle_fire_loop.mp3</filename>
+<filename>../../../../../../../projects/mods/bandaidmod/source/soundsrc/rifle_fire_loop.wav</filename>
 <soundbankname>rifle</soundbankname>
 <weight>100</weight>
 <percentagelocked>0</percentagelocked>
@@ -449,7 +449,7 @@
 <notes></notes>
 <entrylistmode>1</entrylistmode>
 <waveform>
-<filename>../../../../../../../projects/mods/bandaidmod/source/soundsrc/rifle_fire_loop_distant.mp3</filename>
+<filename>../../../../../../../projects/mods/bandaidmod/source/soundsrc/rifle_fire_loop_distant.wav</filename>
 <soundbankname>rifle</soundbankname>
 <weight>100</weight>
 <percentagelocked>0</percentagelocked>
@@ -771,6 +771,11 @@
 </waveform>
 </sounddef>
 </sounddeffolder>
+</sounddeffolder>
+<sounddeffolder>
+<name>__simpleevent_sounddef__</name>
+<guid>{2540707f-4752-4f4e-9513-bbf8f02d6955}</guid>
+<open>0</open>
 </sounddeffolder>
 </sounddeffolder>
 <eventgroup>
@@ -8593,8 +8598,8 @@
 <notes></notes>
 </waveform>
 <waveform>
-<filename>../../../../../../../projects/mods/bandaidmod/source/soundsrc/rifle_fire_loop.mp3</filename>
-<guid>{31859902-72b9-4cd6-9823-f1d7c930aa94}</guid>
+<filename>../../../../../../../projects/mods/bandaidmod/source/soundsrc/rifle_fire_loop.wav</filename>
+<guid>{dd55cf67-3987-463a-90cd-640f65e7afa1}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
 <deffreq>44100</deffreq>
@@ -8647,8 +8652,8 @@
 <notes></notes>
 </waveform>
 <waveform>
-<filename>../../../../../../../projects/mods/bandaidmod/source/soundsrc/rifle_fire_loop_distant.mp3</filename>
-<guid>{1e27cec4-5191-4433-8ecd-c6c2288d12dd}</guid>
+<filename>../../../../../../../projects/mods/bandaidmod/source/soundsrc/rifle_fire_loop_distant.wav</filename>
+<guid>{856d74c3-16f5-4178-9cdc-49cee616a152}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
 <deffreq>44100</deffreq>
