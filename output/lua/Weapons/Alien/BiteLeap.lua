@@ -102,10 +102,10 @@ function BiteLeap:GetMeleeBase()
     
     local parent = self:GetParent()
     if parent and parent.GetIsEnzymed and parent:GetIsEnzymed() then
-        return 0.8, 1.1
+        return 1.15, 1.05
     end
     
-    return 0.7, 1
+    return 1.1, 1
 end
 
 function BiteLeap:GetMeleeOffset()
