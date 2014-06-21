@@ -1,4 +1,4 @@
-4// ======= Copyright (c) 2003-2013, Unknown Worlds Entertainment, Inc. All rights reserved. =====
+// ======= Copyright (c) 2003-2013, Unknown Worlds Entertainment, Inc. All rights reserved. =====
 //
 // lua\Skulk.lua
 //
@@ -46,7 +46,7 @@ local kLeapVerticalForce = 10.8
 local kLeapTime = 0.2
 local kLeapForce = 7.6
 
-local kMaxSpeed = 7.0
+local kMaxSpeed = 7.8
 
 local kMass = 45 // ~100 pounds
 // How big the spheres are that are casted out to find walls, "feelers".
@@ -498,6 +498,8 @@ function Skulk:ModifyJump(input, velocity, jumpVelocity)
         end
         
         self.timeLastWallJump = Shared.GetTime()
+        
+    else
         
     end
     

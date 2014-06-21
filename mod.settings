@@ -1,6 +1,6 @@
 name        = "Bandaid Mod"
-source_dir  = "source/"
-output_dir  = "output/"
+source_dir  = "source"
+output_dir  = "output"
 description = [=[Bring back the fun to NS2. This ultimate companion for your public server improves playability for your players, regardless of skill level!
 
 This experimental mod aims to make NS2 more enjoyable for the majority of players. We do so with a healthy bit of nostalgia and respect for established game mechanics; This is fun as in less frustrating, not fun as in putting clown makeup on gorges and making them fart balloons.
@@ -11,12 +11,16 @@ Overview
 
 Marines
 - Chained jumps less effective.
+- Medpack pickup cooldown increased by 0.5 seconds.
+- Need 1 less smg bullet to kill a skulk early game.
 
 Skulks
-- Take 1 less bullet to kill. (offset jumping)
+- Take 1 less smg bullet to kill.
 
 Gorges
 - Always webs! max 3, no resource cost.
+- Hydra attack speed increased by 30%.
+- Hydra improved tracking of fast targets.
 
 Exos
 - Restored classic ns2 exo traits:
