@@ -14,6 +14,9 @@ class 'Tracer'
 Tracer.kMapName             = "tracer"
 
 kDefaultTracerEffectName = PrecacheAsset("cinematics/marine/tracer.cinematic")
+kDefaultTracerEffectWeapon1Name = PrecacheAsset("cinematics/marine/tracer1.cinematic")
+kDefaultTracerEffectWeapon2Name = PrecacheAsset("cinematics/marine/tracer2.cinematic")
+kDefaultTracerEffectWeapon3Name = PrecacheAsset("cinematics/marine/tracer3.cinematic")
 kMinigunTracerEffectName = PrecacheAsset("cinematics/marine/exo_tracer.cinematic")
 kRailgunTracerEffectName = PrecacheAsset("cinematics/marine/railgun/tracer.cinematic")
 kRailgunTracerResidueEffectName = PrecacheAsset("cinematics/marine/railgun/tracer_residue.cinematic")

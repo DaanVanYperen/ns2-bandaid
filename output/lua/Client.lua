@@ -638,7 +638,18 @@ function CreateTracer(startPoint, endPoint, velocity, doer, effectName, residueE
             if doer.GetTracerEffectName then
                 effectName = doer:GetTracerEffectName()
             else
-                effectName = kDefaultTracerEffectName
+
+                // apply colored tracers based on tech level.
+                local weaponLevel = PlayerUI_GetWeaponLevel()
+                if ( weaponLevel == 1 ) then
+                    effectName = kDefaultTracerEffectWeapon1Name
+                elseif ( weaponLevel == 2 ) then 
+                    effectName = kDefaultTracerEffectWeapon2Name
+                elseif ( weaponLevel == 3 ) then
+                    effectName = kDefaultTracerEffectWeapon3Name
+                else
+                    effectName = kDefaultTracerEffectName
+                end
             end
         
         end
