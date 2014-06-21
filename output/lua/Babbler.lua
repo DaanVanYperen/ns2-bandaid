@@ -28,21 +28,21 @@ Babbler.kModelName = PrecacheAsset("models/alien/babbler/babbler.model")
 Babbler.kModelNameShadow = PrecacheAsset("models/alien/babbler/babbler_shadow.model")
 local kAnimationGraph = PrecacheAsset("models/alien/babbler/babbler.animation_graph")
 
-Babbler.kMass = 15
+Babbler.kMass = 12
 Babbler.kRadius = .25
 Babbler.kLinearDamping = 0
 Babbler.kRestitution = .65
 
 local kTargetSearchRange = 12
-local kAttackRate = 0.37
-local kLifeTime = 60 * 5
+local kAttackRate = 0.32
+local kLifeTime = 60 * 10
 
-local kUpdateMoveInterval = 0.5
+local kUpdateMoveInterval = 0.3
 local kUpdateAttackInterval = 1
-local kMinJumpDistance = 6
-local kBabblerRunSpeed = 7
+local kMinJumpDistance = 4
+local kBabblerRunSpeed = 10
 local kVerticalJumpForce = 6
-local kMaxJumpForce = 15
+local kMaxJumpForce = 20
 local kMinJumpForce = 5
 local kTurnSpeed = math.pi
 
@@ -533,7 +533,7 @@ if Server then
                 
                 self.lastBabblerBallId = babblerBall:GetId()
                 self:SetMoveType(kBabblerMoveType.Move, nil, babblerBall:GetOrigin())
-                self:SetIgnoreOrders(1.5)
+                self:SetIgnoreOrders(1.0)
                 
             elseif canReach then
         
@@ -556,7 +556,7 @@ if Server then
             else
 
                 self:SetMoveType(kBabblerMoveType.Move, nil, target:GetOrigin())
-                self:SetIgnoreOrders(1.5)
+                self:SetIgnoreOrders(1.0)
             
             end
             
