@@ -56,10 +56,9 @@ function SwipeBlink:GetMeleeBase()
 
     local parent = self:GetParent()
     if parent and parent.GetIsEnzymed and parent:GetIsEnzymed() then
-        return 1, 1.2
+        return 1.3, 1.2
     end
-    return .7, 1
-    
+    return 1.2, 1.1    
 end
 
 function SwipeBlink:GetDeathIconIndex()
