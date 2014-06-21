@@ -29,17 +29,19 @@ local kSpread = Math.Radians(2.8)
 local kButtRange = 1.1
 
 local kNumberOfVariants = 3
-
-local kSingleShotSounds = { "sound/NS2.fev/marine/rifle/fire_single", "sound/NS2.fev/marine/rifle/fire_single_2", "sound/NS2.fev/marine/rifle/fire_single_3" }
+                                       
+local kSingleShotSounds = { "sound/bandaid.fev/marine/rifle/t0/fire_single", "sound/bandaid.fev/marine/rifle/t1/fire_single", "sound/bandaid.fev/marine/rifle/t2/fire_single", "sound/bandaid.fev/marine/rifle/t3/fire_single" }
 for k, v in ipairs(kSingleShotSounds) do PrecacheAsset(v) end
 
-local kLoopingSounds = { "sound/NS2.fev/marine/rifle/fire_14_sec_loop", "sound/NS2.fev/marine/rifle/fire_loop_2", "sound/NS2.fev/marine/rifle/fire_loop_3",
-                         "sound/NS2.fev/marine/rifle/fire_loop_1_upgrade_1", "sound/NS2.fev/marine/rifle/fire_loop_2_upgrade_1", "sound/NS2.fev/marine/rifle/fire_loop_3_upgrade_1",
-                         "sound/NS2.fev/marine/rifle/fire_loop_1_upgrade_3", "sound/NS2.fev/marine/rifle/fire_loop_2_upgrade_3", "sound/NS2.fev/marine/rifle/fire_loop_3_upgrade_3" }
+local kLoopingSounds = { "sound/bandaid.fev/marine/rifle/t0/fire_14_sec_loop", "sound/bandaid.fev/marine/rifle/t0/fire_14_sec_loop", "sound/bandaid.fev/marine/rifle/t0/fire_14_sec_loop", 
+                         "sound/bandaid.fev/marine/rifle/t1/fire_14_sec_loop", "sound/bandaid.fev/marine/rifle/t1/fire_14_sec_loop", "sound/bandaid.fev/marine/rifle/t1/fire_14_sec_loop", 
+                         "sound/bandaid.fev/marine/rifle/t2/fire_14_sec_loop", "sound/bandaid.fev/marine/rifle/t2/fire_14_sec_loop", "sound/bandaid.fev/marine/rifle/t2/fire_14_sec_loop",
+                         "sound/bandaid.fev/marine/rifle/t3/fire_14_sec_loop", "sound/bandaid.fev/marine/rifle/t3/fire_14_sec_loop", "sound/bandaid.fev/marine/rifle/t3/fire_14_sec_loop",
+  }
 
 for k, v in ipairs(kLoopingSounds) do PrecacheAsset(v) end
 
-local kEndSounds = { "sound/NS2.fev/marine/rifle/end", "sound/NS2.fev/marine/rifle/end_upgrade_1", "sound/NS2.fev/marine/rifle/end_upgrade_3"  }
+local kEndSounds = { "sound/bandaid.fev/marine/rifle/t0/end", "sound/bandaid.fev/marine/rifle/t1/end", "sound/bandaid.fev/marine/rifle/t2/end", "sound/bandaid.fev/marine/rifle/t3/end" }
 for k, v in ipairs(kEndSounds) do PrecacheAsset(v) end
 
 local kLoopingShellCinematic = PrecacheAsset("cinematics/marine/rifle/shell_looping.cinematic")
@@ -48,6 +50,7 @@ local kShellEjectAttachPoint = "fxnode_riflecasing"
 
 local kMuzzleCinematics = {
     PrecacheAsset("cinematics/marine/rifle/muzzle_flash.cinematic"),
+    PrecacheAsset("cinematics/marine/rifle/muzzle_flash2.cinematic"),
     PrecacheAsset("cinematics/marine/rifle/muzzle_flash2.cinematic"),
     PrecacheAsset("cinematics/marine/rifle/muzzle_flash3.cinematic"),
 }
@@ -177,7 +180,7 @@ local function UpdateSoundType(self, player)
     local upgradeLevel = 0
     
     if player.GetWeaponUpgradeLevel then
-        upgradeLevel = math.max(0, player:GetWeaponUpgradeLevel() - 1)
+        upgradeLevel = math.max(0, player:GetWeaponUpgradeLevel())
     end
 
     self.soundType = self.soundVariant + upgradeLevel * kNumberOfVariants
