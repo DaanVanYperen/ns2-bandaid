@@ -7,14 +7,14 @@ This experimental mod aims to make NS2 more enjoyable for the majority of player
 
 Lets face it, your server is not filled with competitive players. If you favor having some fun over absolute balance, this is the mod for you!
 
-Overview
+Overview v0.2
 
 Marines
+- Need 1 less smg bullet to kill a skulk early game.
 - Chained jumps less effective.
 - Medpack pickup cooldown increased by 0.5 seconds.
-- Need 1 less smg bullet to kill a skulk early game.
-- Weapon tracers indicate weapon tech level.
-- Lmg weapon sound test.
+- Weapon tracers and muzzle flash indicate tech level.
+- Improved rifle sfx.
 
 Exos
 - Restored classic ns2 exo traits:

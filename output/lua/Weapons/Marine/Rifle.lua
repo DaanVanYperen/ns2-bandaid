@@ -50,7 +50,7 @@ local kShellEjectAttachPoint = "fxnode_riflecasing"
 
 local kMuzzleCinematics = {
     PrecacheAsset("cinematics/marine/rifle/muzzle_flash.cinematic"),
-    PrecacheAsset("cinematics/marine/rifle/muzzle_flash2.cinematic"),
+    PrecacheAsset("cinematics/marine/rifle/muzzle_flash1.cinematic"),
     PrecacheAsset("cinematics/marine/rifle/muzzle_flash2.cinematic"),
     PrecacheAsset("cinematics/marine/rifle/muzzle_flash3.cinematic"),
 }
