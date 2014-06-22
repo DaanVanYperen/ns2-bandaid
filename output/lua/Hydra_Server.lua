@@ -75,7 +75,7 @@ function Hydra:AttackTarget()
     self:TriggerEffects("hydra_attack")
     
     // Random rate of fire to prevent players from popping out of cover and shooting regularly
-    self.timeOfNextFire = Shared.GetTime() + .5 + math.random() * .5
+    self.timeOfNextFire = Shared.GetTime() + .8 + math.random() * .5
     
 end
 
