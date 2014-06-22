@@ -484,10 +484,6 @@ function Exo:GetMaxSpeed(possible)
     
     local maxSpeed = kMaxSpeed * self:GetInventorySpeedScalar()
     
-    if self.catpackboost then
-        maxSpeed = maxSpeed + kCatPackMoveAddSpeed
-    end
-    
     return maxSpeed
     
 end
@@ -507,10 +503,7 @@ function Exo:GetHasMinigun()
 end
 
 function Exo:GetCanUseCatPack()
-
-    local enoughTimePassed = self.timeCatpackboost + 6 < Shared.GetTime()
-    return not self.catpackboost or enoughTimePassed
-    
+    return false
 end
 
 function Exo:GetHeadAttachpointName()
@@ -651,10 +644,6 @@ function Exo:OnProcessMove(input)
 
     Player.OnProcessMove(self, input)
     
-    if self.catpackboost then
-        self.catpackboost = Shared.GetTime() - self.timeCatpackboost < kCatPackDuration
-    end
-    
     if Client and not Shared.GetIsRunningPrediction() then
         UpdateIdle2DSound(self, input.yaw, input.pitch, input.time)
         UpdateThrusterEffects(self)
@@ -680,7 +669,7 @@ function Exo:GetFlashlightOn()
 end
 
 function Exo:GetHasCatpackBoost()
-    return self.catpackboost
+    return false
 end
 
 function Exo:GetCanEject()
@@ -1074,10 +1063,6 @@ function Exo:GetIsThrusterAllowed()
 end
 
 function Exo:ApplyCatPack()
-
-    self.catpackboost = true
-    self.timeCatpackboost = Shared.GetTime()
-    
 end
 
 function Exo:UpdateThrusters(input)
